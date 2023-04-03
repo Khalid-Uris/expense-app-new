@@ -1,4 +1,5 @@
 // import ExpenseItem from "./components/ExpenseItem";
+import NewExpense from "./NewExpense/NewExpense";
 import Expenses from "./components/Expenses";
 
 function App() {
@@ -24,11 +25,11 @@ function App() {
     },
   ];
 
-  console.log(expenses[0]["id"]);
+  //console.log(expenses[0]["id"]);
   return (
     <div>
       {/* <h2>Let's get started!</h2> */}
-
+      <NewExpense />
       <Expenses expenses={expenses} />
       {/* <ExpenseItem
           title={expenses[0].title}
